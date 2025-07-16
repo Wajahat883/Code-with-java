@@ -1,5 +1,29 @@
+import java.util.Scanner;
+
 public class myfirstprogram {
+
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter name:");
+        String name = input.nextLine();
+        int number = input.nextInt();
+        System.out.println(name + "number" + number);
+
+        // print star
+        int star = 5;
+        for (int i = 0; i < star; i++) {
+            for (int j = 0; j < star; j++) {
+                if (i == j || j == i - 1 || i <= j) {
+                    System.out.print("* ");
+                } else {
+                    System.out.print("");
+                }
+            }
+            System.out.println();
+
+        }
+
         String firstname = "Muhammad ";
         String lastname = "Wajahat";
         String watchMoive = "Last-Hope";
