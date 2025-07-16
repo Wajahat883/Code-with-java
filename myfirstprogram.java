@@ -7,8 +7,18 @@ public class myfirstprogram {
 
         System.out.println("Enter name:");
         String name = input.nextLine();
+
+        System.out.println("Enter name again:");
+        String again = input.nextLine();
+
+        System.out.println("Enter number:");
         int number = input.nextInt();
-        System.out.println(name + "number" + number);
+
+        boolean namesMatch = again.equals(name);
+
+        System.out.println("Name: " + name);
+        System.out.println("Number: " + number);
+        System.out.println("Names Match: " + namesMatch);
 
         // print star
         int star = 5;
