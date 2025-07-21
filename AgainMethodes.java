@@ -5,9 +5,9 @@ public class AgainMethodes {
     static double side;
 
     public static void setside() {
-        Scanner input = new Scanner(System.in);
+        Scanner hy = new Scanner(System.in);
         System.out.print("Enter a valid number:");
-        side = input.nextDouble();
+        side = hy.nextDouble();
 
     }
 

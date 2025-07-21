@@ -2,14 +2,14 @@ import java.util.Scanner;
 
 public class cargearsystem {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        Scanner key = new Scanner(System.in);
         String repeat;
 
         // Step 1: Start the car
         System.out.println("Start The Engine:");
         System.out.println("Give race...");
         System.out.print("Enter gear number to move (should be 1): ");
-        int pickNumber = input.nextInt();
+        int pickNumber = key.nextInt();
 
         if (pickNumber != 1) {
             System.out.println(" Car can't be started. Please choose gear 1.");
@@ -18,7 +18,7 @@ public class cargearsystem {
 
         System.out.println(" Car started successfully in gear 1!");
 
-        input.nextLine();
+        key.nextLine();
 
         do {
             System.out.println("\n========= GEAR MENU =========");
@@ -29,7 +29,7 @@ public class cargearsystem {
             System.out.println("5. Stop");
             System.out.println("==============================");
             System.out.print("Enter your choice: ");
-            int gear = input.nextInt();
+            int gear = key.nextInt();
 
             switch (gear) {
                 case 1:
@@ -52,9 +52,9 @@ public class cargearsystem {
                     break;
             }
 
-            input.nextLine();
+            key.nextLine();
             System.out.print("\nDo you want to continue driving? (y/n): ");
-            repeat = input.nextLine();
+            repeat = key.nextLine();
 
         } while (repeat.equalsIgnoreCase("y"));
 
